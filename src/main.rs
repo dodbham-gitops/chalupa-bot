@@ -105,8 +105,8 @@ async fn main() {
         _ = updater.update_loop() => {
             println!("The updater stopped unexpectedly")
         }
-        _ = responder.start() => {
-            println!("The responder stopped unexpectedly")
+        _ = client.start() => {
+            println!("Client error: {:?}", why);
         }
     };
 }
