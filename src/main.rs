@@ -73,7 +73,7 @@ impl Updater {
 
         // Set to true to enable looping messages to the channel
         //   TODO - this can go away when we build in a proper debug fn and environment variable
-        let debug_loop_enabled = true;
+        let debug_loop_enabled = false;
         loop {
             interval.tick().await;
             if debug_loop_enabled {
