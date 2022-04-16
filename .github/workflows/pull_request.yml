@@ -2,7 +2,7 @@ name: feature-branch
 
 on:
   push:
-    branches: [ golden-* ]
+    branches: [ golden-*, fix-*, hotfix-*, feat-* ]
 
 env:
   REGISTRY: ghcr.io
