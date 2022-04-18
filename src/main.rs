@@ -25,6 +25,7 @@ struct Responder;
 #[async_trait]
 impl EventHandler for Responder {
     /// React to messages
+    ///
     /// The actual listening is handled with some Serenity magic.
     /// Here, we just match on the message content and react .
     async fn message(&self, ctx: Context, msg: Message) {
