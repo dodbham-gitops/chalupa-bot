@@ -76,7 +76,7 @@ impl Updater {
         loop {
             interval.tick().await;
             if debug_loop_enabled {
-                self.channel_id.say(http, "Hello from rust").await?;
+                self.channel_id.say(http, "Hey preview deployement!").await?;
             }
         }
     }
