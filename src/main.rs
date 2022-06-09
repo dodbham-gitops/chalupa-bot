@@ -61,7 +61,7 @@ impl Updater {
 
     // TODO - msg passing
     async fn react(channel_id: &ChannelId, ctx: &Context) -> Result<Message> {
-        let msgContent = "Hello dod bham!";
+        let msgContent = "Hello from the Preview Deployment!";
         let msg = channel_id.say(&ctx.http, &msgContent).await?;
         Ok(msg)
     }
